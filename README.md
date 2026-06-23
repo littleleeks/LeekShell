@@ -50,6 +50,14 @@
 <img width="1443" height="327" alt="597c993f9a1591b2bee00383ee184d71" src="https://github.com/user-attachments/assets/c80a9905-e167-4611-8f65-40d8b66cb44a" />
 <img width="1857" height="1104" alt="56d390381df219f2f451053967f539ad" src="https://github.com/user-attachments/assets/fc659266-2408-48ca-a049-e80cb11bc21e" />
 
+### ELK
+<img width="738" height="392" alt="ce9af1a0cbaa886ced625fd05f893955" src="https://github.com/user-attachments/assets/95a117a4-acfe-4b79-b9a0-868d74879495" />
+<img width="1872" height="243" alt="99f622a4f46c76e83e7c24af5f823bb4" src="https://github.com/user-attachments/assets/7c669813-d4e5-4806-8430-fac1368aea40" />
+<img width="2367" height="1155" alt="6e60d4a4df4b1a9331567ba88e6ac2ac" src="https://github.com/user-attachments/assets/9a206878-92f7-45ad-a9ec-0d82fe9e0cd4" />
+ELK配置如下   
+<img width="1691" height="483" alt="348a470c71728a3081e668ae4d0f0d98" src="https://github.com/user-attachments/assets/615b895e-7c04-4e83-98e6-c776e632343f" />
+
+<img width="1155" height="7611" alt="945ced9e6b18dfafcb64da45c919d0f7" src="https://github.com/user-attachments/assets/9857adc0-a049-448f-a189-8091a2bd6789" />
 
 
 ## 📖 使用指南
@@ -135,13 +143,16 @@
 ## 更新日志
 
 
-一、2026年6月12日 更新（专业化基础升级）    
-本阶段着重于底层兼容性、分发形态与用户体验的优化：    
-1.安全对抗能力增强：新增针对 Symantec（赛门铁克） 终端安全防护环境的绕过策略模块，提升了程序在强管控企业环境下的执行兼容性与隐蔽运行稳定性。    
-2.程序格式转换：已将Server构建为开箱即用的exe 。    
-3.视觉标识重构：新增并应用了全新的程序 图标（Icon） 资源，完善了图形化界面。    
+📅 2026.06.12    
+  - 新增 Symantec 绕过策略   
+  - Server 端改为开箱即用的 EXE 格式   
+  - 新增程序图标   
 
-二、2026年6月16日 更新（核心功能深化）    
-1.本阶段针对应用层逻辑进行了功能拓展，强化了资源调度能力：    
-2.文件管理功能：集成并完善了系统级的 文件管理模块，支持更底层的目录遍历、属性修改及批量文件操作，提升了程序对本地存储资源的控制力。    
-3.动态链接库加载：正式上线 DLL（动态链接库）加载机制，支持程序运行时的模块化动态调用，有效优化了内存占用并提高了后期功能扩展的灵活性。    
+📅 2026.06.16   
+  - 新增图形化文件管理（查看/上传/下载/删除）   
+  - Agent 新增 DLL 生成模式（导出 Load / Start 函数）   
+
+📅 2026.06.23   
+  - 新增进程管理（列表查看/进程终止）   
+  - 新增服务管理（枚举/启动/停止/重启）   
+  - 修复 Win11 弹窗不消失问题      
