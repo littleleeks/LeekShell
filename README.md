@@ -97,6 +97,15 @@ ELK配置如下
 
 ---
 
+## 🚀 Linux Agent     
+
+同一套Server、同一个控制台、同样的操作逻辑——只是目标机器从Windows换成了Linux。   
+<img width="2398" height="743" alt="image" src="https://github.com/user-attachments/assets/467f6884-332f-4321-b81f-f09d8b20a74b" />
+<img width="2538" height="1047" alt="image" src="https://github.com/user-attachments/assets/b90d7d9d-d60d-4782-b024-38e0b4e644b8" />
+<img width="2529" height="929" alt="image" src="https://github.com/user-attachments/assets/2802ac04-08b8-46a4-a9b8-48ffe8c8f790" />
+
+
+
 ## 🤔 为什么自研新的C2？
 
 ### 现状痛点
@@ -150,9 +159,29 @@ ELK配置如下
 
 📅 2026.06.16   
   - 新增图形化文件管理（查看/上传/下载/删除）   
-  - Agent 新增 DLL 生成模式（导出 Load / Start 函数）   
+  - Agent 新增 DLL 生成模式（导出 Load / Start 函数）
+
 
 📅 2026.06.23   
   - 新增进程管理（列表查看/进程终止）   
   - 新增服务管理（枚举/启动/停止/重启）   
-  - 修复 Win11 弹窗不消失问题      
+  - 修复 Win11 弹窗不消失问题
+
+📅 2026年6月30日 更新
+
+新增：
+  - Linux Agent 正式上线（C++开发）
+  - 支持TCP直连上线
+  - 支持命令执行（shell）
+  - 支持图形化文件管理（查看/上传/下载/删除）
+  - 支持图形化进程管理（列表查看/进程终止）
+  - 与Windows Agent共用同一套Server和控制台
+
+开发中：
+  - Linux多平台上线适配
+  - Linux一键部署后门
+
+修复：
+  - 若干稳定性优化
+
+
