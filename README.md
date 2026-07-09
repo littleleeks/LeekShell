@@ -184,4 +184,17 @@ ELK配置如下
 修复：
   - 若干稳定性优化
 
+📅 2026年7月9日 更新    
+
+新增：
+  - LeekShell 服务端正式支持 Linux
+  - 一键运行：./LeekShell
+  - 覆盖 Ubuntu / Debian / CentOS / Kali 等主流发行版
+  - 所有功能与 Windows 版本完全一致
+
+优化：
+  - 服务端代码跨平台重构
+  - 移除 Windows 特有依赖
+  - 开箱即用，无需配置 Python 环境
+
 
