@@ -197,4 +197,25 @@ ELK配置如下
   - 移除 Windows 特有依赖
   - 开箱即用，无需配置 Python 环境
 
+📅 2026年7月22日 更新
+
+新增：
+  - WSS（WebSocket over TLS）加密通信协议
+  - 支持 WSS 与 TCP 双模式共存
+  - Linux Agent 同步支持 WSS 协议
+
+重写：
+  - Windows Agent 命令执行模块全量重写
+  - 管道读取效率提升，回显速度优化
+  - 长时间命令稳定性优化
+  - 错误输出完整捕获
+
+兼容性：
+  - Linux Agent 最低支持 Ubuntu 18.04
+  - 覆盖 Ubuntu 18/20/22/24、Debian 10/11/12、CentOS 7/8/9
+
+免杀：
+  - 卡巴斯基优选版 + EDR：✅ 上线成功，无告警
+  - 赛门铁克 EPP/EDR：✅ 上线成功，无告警
+
 
