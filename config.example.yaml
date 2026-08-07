@@ -1,0 +1,35 @@
+# LeekShell C2 Server 示例配置
+# 复制为 config.yaml 后按需修改。所有值均可被命令行参数覆盖。
+
+auth:
+  login_user: admin            # 第二层（C2 控制台）用户名
+  login_pass: leekshell2026    # 第二层密码 —— 请修改
+  preauth_user: operator       # 第一层（企业伪装登录）用户名
+  preauth_pass: changeme       # 第一层密码 —— 请修改
+
+server_host: 0.0.0.0           # Payload 生成器默认回连地址 —— 请改为服务器实际 IP
+
+tcp_listener:
+  port: 4444                   # TCP 加密通道端口（0 = 禁用）
+
+wss_listener:
+  port: 8443                   # WSS 加密通道端口（0 = 禁用）
+  cert: templates/leekshell.crt
+  key: templates/leekshell.key
+  auto_cert: true              # 证书缺失时自动生成自签名证书
+
+web:
+  host: 0.0.0.0
+  port: 8445                   # Web 管理界面端口
+  https: false                 # 如需 HTTPS 访问 Web，改为 true
+
+auto_listeners:
+- protocol: tcp
+  port: 4444
+- protocol: wss
+  port: 8443
+
+sandbox:
+  enabled: true                # 访问者信息采集（可选）
+  collect_fingerprint: true
+  record_failed_creds: true
