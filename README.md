@@ -2,10 +2,6 @@
 
 > 轻量化、全自研C2——红队的新选择 | 实测卡巴斯基优选版+EDR双双失明
 
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://img.shields.io/badge/Python-3.8%2B-blue)
-[![C++](https://img.shields.io/badge/C%2B%2B-17-orange)](https://img.shields.io/badge/C%2B%2B-17-orange)
-[![License](https://img.shields.io/badge/License-Research%20Only-red)](https://img.shields.io/badge/License-Research%20Only-red)
 
 **LeekShell** 是一款完全自研的轻量级C2框架，采用 **Python + C++** 架构，舍弃部分冗余功能，以换取更高隐蔽性与可控性。
 
